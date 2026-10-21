@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ItemResource" format=3]
+
+[ext_resource type="Script" path="res://data/items/ItemResource.gd" id="1"]
+[ext_resource type="PackedScene" path="res://structures/camp_storage.tscn" id="1_cs"]
+
+[resource]
+script = ExtResource("1")
+id = "camp_storage"
+display_name = "营地仓库"
+description = "可放置的储物箱，作为营地仓库：跨负重中转与长期存储。制作后按 B 进入建造模式放置。"
+category = 4
+stack_size = 5
+item_weight = 8.0
+constructable_scene = ExtResource("1_cs")
+crafting_costs = Array[Dictionary]([{
+"amount": 5,
+"id": "log"
+}, {
+"amount": 4,
+"id": "stick"
+}, {
+"amount": 2,
+"id": "rope"
+}])

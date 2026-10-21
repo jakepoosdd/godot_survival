@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/items/ItemResource.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "pickaxe"
+display_name = "镐"
+description = "挖矿必备工具，没有它无法开采石矿与燧石。"
+category = 2
+stack_size = 1
+item_weight = 2.5
+crafting_costs = Array[Dictionary]([{
+"amount": 2,
+"id": "stick"
+}, {
+"amount": 2,
+"id": "stone"
+}])

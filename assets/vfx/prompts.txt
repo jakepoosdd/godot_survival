@@ -1,0 +1,25 @@
+# 生成贴图提示词（保存为 PNG 放入 assets/vfx/ 即自动生效）
+# 说明：全部用「黑底发光体」即可——代码用加法混合(BLEND_MODE_ADD)，黑色部分会变为透明不可见。
+# 推荐 512x512（soft_glow 用 256x256），正方形，柔和发光边缘。
+
+# 1) magic_bolt.png  —— 法师魔法弹（紫色能量球）
+Top-down view of a glowing magical energy orb, vivid violet and indigo core with a luminous white-hot center, wispy arcane tendrils and crackling energy wisps, soft radial glow fading to pure black, completely black background, game sprite texture, 512x512, ultra detailed, mystical, no background.
+
+# 2) magic_impact.png —— 魔法命中爆点（紫色冲击波）
+Radial magic shockwave burst, violet and purple energy exploding outward with sparkling particles and thin lightning streaks, bright center fading to black edges, black background, game VFX sprite, 512x512, dynamic, no background.
+
+# 3) heal_mote.png —— 治疗粒子（绿/青色光点）
+Soft glowing green-teal healing particles, gentle ethereal sparkles and floating motes of light, leaf-like luminous specks, soft radial glow fading to black, black background, game VFX sprite, 512x512, serene, no background.
+
+# 4) soft_glow.png —— 通用柔光底图（加法混合基础光斑，飞弹拖尾/爆点喷溅/治疗柔光都用它）
+A perfectly soft white radial gradient glow, smooth falloff from a bright center to pure black, a clean luminous halo, black background, game particle texture, 256x256, minimal, no details, no background.
+
+# 5) fire_flame.png —— 营地火焰（橙黄红火苗，竖直向上）
+Stylized campfire flame, warm orange-yellow-red fire with glowing embers, a vertical flame shape rising upward, soft luminous edges, black background, game sprite texture, 512x512, no background.
+# 进阶：若想要飞溅火星，可再生成一张 fire_ember.png（小橙点，可复用 soft_glow 着色），本代码暂用 soft_glow 兜底。
+
+# 6) arrow.png —— 弓箭手箭矢（竖直朝上、非加法混合）
+# ⚠️ 关键：底色一定要【纯黑】或【纯白】的纯色，不要用棋盘格/透明格子底！
+#    棋盘格底经 JPEG 压缩后噪点无法干净抠除。纯黑底最好抠（走 _keyout_black）。
+#    箭身请用【明亮】的银色金属 +【中亮】的浅木杆，避免过暗被黑底吞掉。
+A single medieval arrow / bolt pointing straight up, bright silver metal arrowhead at the top, light wooden shaft, silver metal band, feather fletching at the bottom, clean flat illustration with strong rim light so the whole arrow stays bright, PURE BLACK solid background (#000000), game sprite, 256x512 (tall), no background, no checkerboard, no transparency grid.

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ItemResource" format=3]
+
+[ext_resource type="Script" path="res://data/items/ItemResource.gd" id="1"]
+[ext_resource type="PackedScene" path="res://structures/tent.tscn" id="1_t"]
+
+[resource]
+script = ExtResource("1")
+id = "tent"
+display_name = "帐篷"
+description = "可放置的帐篷，进帐休息可恢复较多生命与精神。"
+category = 4
+stack_size = 5
+item_weight = 6.0
+constructable_scene = ExtResource("1_t")
+build_costs = Array[Dictionary]([{
+"amount": 3,
+"id": "log"
+}, {
+"amount": 4,
+"id": "stick"
+}, {
+"amount": 2,
+"id": "rope"
+}])

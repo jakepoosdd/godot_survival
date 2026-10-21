@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemResource" format=3]
+
+[ext_resource type="Script" path="res://data/items/ItemResource.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "fish_big"
+display_name = "大鱼"
+description = "肉质丰厚的大鱼，送女主好感最高，烤熟更香。"
+category = 3
+item_weight = 1.2
+stack_size = 20
+hunger_change = 18.0
+cooked_result = "cooked_fish"
+cook_time = 3.0

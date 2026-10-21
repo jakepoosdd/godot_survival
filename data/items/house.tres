@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ItemResource" format=3]
+
+[ext_resource type="Script" path="res://data/items/ItemResource.gd" id="1"]
+[ext_resource type="PackedScene" path="res://structures/house.tscn" id="1_h"]
+
+[resource]
+script = ExtResource("1")
+id = "house"
+display_name = "房子"
+description = "可放置的木屋，作为营地居所：进屋休息到天亮。制作后按 B 进入建造模式放置。"
+category = 4
+stack_size = 3
+item_weight = 20.0
+constructable_scene = ExtResource("1_h")
+crafting_costs = Array[Dictionary]([{
+"amount": 10,
+"id": "log"
+}, {
+"amount": 8,
+"id": "stick"
+}, {
+"amount": 4,
+"id": "rope"
+}])

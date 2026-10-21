@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://structures/fence.gd" id="1"]
+[ext_resource type="PackedScene" path="res://Prefabs/Fence/Plank2/EA03_Fence_Plank_02a_PRE.prefab.scn" id="2"]
+
+[node name="FenceBuildable" type="Node3D"]
+script = ExtResource("1")
+
+[node name="Visual" parent="." instance=ExtResource("2")]

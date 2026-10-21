@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ItemResource" format=3]
+
+[ext_resource type="Script" path="res://data/items/ItemResource.gd" id="1"]
+[ext_resource type="PackedScene" path="res://structures/campfire.tscn" id="1_cb4g4"]
+
+[resource]
+script = ExtResource("1")
+id = "campfire"
+display_name = "营火"
+description = "可放置的营火，用于烹饪食物、取暖与照明。"
+category = 4
+stack_size = 10
+item_weight = 5.0
+constructable_scene = ExtResource("1_cb4g4")
+build_costs = Array[Dictionary]([{
+"amount": 5,
+"id": "stick"
+}, {
+"amount": 3,
+"id": "stone"
+}, {
+"amount": 1,
+"id": "flintstone"
+}])

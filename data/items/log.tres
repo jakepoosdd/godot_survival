@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/items/ItemResource.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "log"
+display_name = "原木"
+description = "粗大的树干，建造和制作的基础材料。"
+category = 0
+item_weight = 2.0
+stack_size = 50

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemResource" format=3]
+
+[ext_resource type="Script" path="res://data/items/ItemResource.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "spear"
+display_name = "长矛"
+description = "可制作的近战武器，攻击伤害更高。"
+category = 1
+stack_size = 1
+item_weight = 2.0
+weapon_damage = 35.0
+crafting_costs = Array[Dictionary]([])

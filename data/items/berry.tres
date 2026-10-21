@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/items/ItemResource.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "berry"
+display_name = "浆果"
+description = "野地里采的红果子，直接吃能缓解饥饿、提振精神。"
+category = 3
+item_weight = 0.2
+stack_size = 50
+hunger_change = 8.0
+sanity_change = 3.0

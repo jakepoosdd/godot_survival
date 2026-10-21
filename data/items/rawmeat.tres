@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/items/ItemResource.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "rawmeat"
+display_name = "生肉"
+description = "猎物身上的鲜肉，生吃有风险，火上烤熟更营养。"
+category = 3
+item_weight = 1.0
+stack_size = 20
+health_change = -5.0
+hunger_change = 15.0
+cooked_result = "cookedmeat"
+cook_time = 3.0

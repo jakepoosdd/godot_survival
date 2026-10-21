@@ -1,0 +1,50 @@
+# Godot 缓存（必须排除）
+.godot/
+.import/
+*.import
+
+# 二进制美术 / 音频素材（本仓库仅存源码，素材另行分发）
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.bmp
+*.tga
+*.exr
+*.hdr
+*.gif
+*.glb
+*.gltf
+*.fbx
+*.obj
+*.blend
+*.dae
+*.scn
+*.ogg
+*.mp3
+*.wav
+*.mp4
+*.webm
+*.ogv
+*.ttf
+*.otf
+*.woff
+*.woff2
+
+# Mono / .NET 构建产物（若将来用 C#）
+.mono/
+data_*/gen/
+
+# 导出的成品（Windows / Linux / Web 包在 godot_survival_export/，不进源码仓库）
+export/
+build/
+dist/
+*.pck
+*.zip
+
+# 操作系统 / 编辑器临时文件
+.DS_Store
+Thumbs.db
+*~
+*.tmp
+*.bak

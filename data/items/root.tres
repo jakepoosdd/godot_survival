@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/items/ItemResource.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "root"
+display_name = "根茎"
+description = "从土里挖出的根茎，生吃也能充饥、提振精神。"
+category = 3
+item_weight = 0.3
+stack_size = 50
+hunger_change = 6.0
+sanity_change = 2.0

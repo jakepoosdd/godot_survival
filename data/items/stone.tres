@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/items/ItemResource.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "stone"
+display_name = "石头"
+description = "随处可见的石块，制作工具和建筑的原料。"
+category = 0
+item_weight = 3.0
+stack_size = 50

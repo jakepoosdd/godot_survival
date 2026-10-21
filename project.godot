@@ -1,0 +1,78 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
+[application]
+
+config/name="Island Survival MVP"
+run/main_scene="res://main.tscn"
+config/features=PackedStringArray("4.7", "Forward Plus")
+
+[autoload]
+
+EventBus="*res://core/EventBus.gd"
+GameManager="*res://core/GameManager.gd"
+RelationshipManager="*res://core/relationship.gd"
+Fences="*res://core/fences.gd"
+NightRaid="*res://core/night_raid.gd"
+CampStorage="*res://core/camp_storage.gd"
+Companions="*res://core/companions.gd"
+NestRaid="*res://core/nest_raid.gd"
+SaveManager="*res://core/SaveManager.gd"
+Inventory="*res://inventory/inventory_bridge.gd"
+ItemIcons="*res://ui/item_icons.gd"
+ItemDatabase="*res://core/ItemDatabase.gd"
+FishDatabase="*res://fishing/FishDatabase.gd"
+Crafting="*res://core/crafting.gd"
+Building="*res://core/building.gd"
+TaskGuide="*res://core/TaskGuide.gd"
+DayNightCycle="*res://core/day_night.gd"
+XP="*res://core/xp.gd"
+Skills="*res://core/skills.gd"
+Missions="*res://core/missions.gd"
+Dialogue="*res://core/dialogue.gd"
+CreatureSpawner="*res://core/creature_spawner.gd"
+Equipment="*res://core/equipment.gd"
+
+Economy="*res://core/economy.gd"
+FishingGear="*res://fishing/FishingGear.gd"
+FishingSystem="*res://fishing/FishingSystem.gd"
+Stage="*res://core/stage.gd"
+Bulletin="*res://core/bulletin.gd"
+Achievements="*res://core/achievements.gd"
+AudioManager="*res://core/audio_manager.gd"
+CombatJuice="*res://core/combat_juice.gd"
+SpellVfx="*res://core/spell_vfx.gd"
+CharacterRegistry="*res://core/character_registry.gd"
+PartyManager="*res://core/party_manager.gd"
+Menus="*res://core/menus.gd"
+FishingUI="*res://ui/fishing_ui.gd"
+PropLoader="*res://core/prop_loader.gd"
+Bench="*res://perf_logger.gd"
+
+[editor_plugins]
+
+enabled_plugins=PackedStringArray("res://addons/terrain_3d/plugin.cfg", "res://addons/sky_3d/plugin.cfg", "res://addons/gator_model_studio/plugin.cfg")
+
+[gui]
+
+theme/custom_font="res://assets/fonts/NotoSansSC-VF.ttf"
+
+[rendering]
+
+renderer/rendering_method="forward_plus"
+renderer/rendering_method.mobile="gl_compatibility"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"

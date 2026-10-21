@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/items/ItemResource.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "shovel"
+display_name = "铲子"
+description = "挖掘地面土堆，获得燧石与可食用的根茎。"
+category = 2
+stack_size = 1
+item_weight = 1.5
+crafting_costs = Array[Dictionary]([{
+"amount": 2,
+"id": "stick"
+}, {
+"amount": 1,
+"id": "stone"
+}])

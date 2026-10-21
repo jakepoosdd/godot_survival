@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/items/ItemResource.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "stick"
+display_name = "树枝"
+description = "轻便的树枝，可制作工具或当柴火。"
+category = 0
+item_weight = 0.5
+stack_size = 99

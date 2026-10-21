@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ItemResource" format=3]
+
+[ext_resource type="Script" path="res://data/items/ItemResource.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "backpack_upgrade"
+display_name = "背包扩容包"
+description = "制作后立刻为背包增加 4 个槽位（可重复制作叠加扩容）。"
+category = 5
+stack_size = 10
+item_weight = 1.0
+upgrade_slots = 4
+crafting_costs = Array[Dictionary]([{
+"amount": 2,
+"id": "rope"
+}, {
+"amount": 4,
+"id": "stick"
+}])

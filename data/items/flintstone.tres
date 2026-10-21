@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/items/ItemResource.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "flintstone"
+display_name = "燧石"
+description = "坚硬的火石，与石头敲击可生火。"
+category = 0
+item_weight = 0.3
+stack_size = 50

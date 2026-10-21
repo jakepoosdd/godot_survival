@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/items/ItemResource.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "cookedmeat"
+display_name = "熟肉"
+description = "在营火上烤熟的肉，恢复大量生命与饥饿。"
+category = 3
+item_weight = 1.0
+stack_size = 20
+health_change = 15.0
+hunger_change = 30.0
